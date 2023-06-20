@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>회원 가입 신청서</title>
+  <style>
+    div {
+      width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>회원 가입을 환영합니다</h1>
+    <form>
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+          <li><label>아이디<input type="text" user_id></label></li>
+          <li><label>이메일<input type="text" e_mail></label></li>
+          <li><labe>비밀번호<input type="password"user_password></labe></li>
+          <li><label>비밀번호 확인<input type="password"user_password></label></li>
+        </ul>
+        
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <label><input type="radio" name="new">메일 수신</label>
+        <label><input type="radio" name="new" checked>메일 수신 안 함</label>
+      </fieldset>
+    </form>
+  <input type="button" value="가입하기">
+  <input type="button" value="취소">
+</div>
+</body>
+
+</html>
