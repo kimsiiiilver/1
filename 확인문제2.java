@@ -1,26 +1,25 @@
-package sec03.exam07;
+package sec05;
 
+import java.util.Scanner;
 
 public class 확인문제2 {
 
 	public static void main(String[] args) {
-		long var1 = 2L;
-		float var2 = 1.8f;
-		double var3 = 2.5;
-		String var4= "3.9";
-		
-		
-		int result = (int)(var1) + (int)(var2) + (int)(var3) + (int)Double.parseDouble(var4);
-		System.out.println(result);//8
-		
-		int result2 = (int)(var1 + var2 + var3) + (int)Double.parseDouble(var4);
-		System.out.println(result2);//9
-		
-		
-		int result3 = (int)(var1 + var2 + var3 + Double.parseDouble(var4));
-		System.out.println(result3);//10
-			
-		
+
+		Scanner s = new Scanner(System.in);
+		System.out.print("첫번째 수:");
+		String num1 = s.next();
+		System.out.print("두번째 수:");
+		String num2 = s.next();
+
+		// 첫번째 수와 두번째 수가 같으면 "두 수가 같아요"
+		// 첫 번째 수와 두 번째 수가 다르면 "두 수가 달라요"
+
+		if (num1.equals(num2)) {
+			System.out.println("두 수가 같아요");
+		} else {
+			System.out.println("두 수가 달라요");
+		}
 
 	}
 
