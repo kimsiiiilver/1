@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>회원가입2</title>
+  <style>
+    div {
+      width: 500px;
+      margin: 0 auto;
+      border: 2px solid yellowgreen;
+    }
+
+    div>h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>회원 가입</h1>
+    <table>
+      <tr>
+        <td>아이디</td>
+        <td><input type="text"></td>
+      </tr>
+
+      <tr>
+        <td>이름</td>
+        <td><input type="text"></td>
+      </tr>
+
+      <tr>
+        <td>비밀번호</td>
+        <td><input type="password"></td>
+      </tr>
+
+      <tr>
+        <td>비밀번호 확인</td>
+        <td><input type="password"></td>
+      </tr>
+
+      <tr>
+        <td>전화번호</td>
+        <td><input type="text" size="30" value="010-123-4567"></td>
+      </tr>
+
+      <tr>
+        <td>이메일</td>
+        <td><input type="text">@<select>
+            <option>직접입력</option>
+            <option>naver.com</option>
+            <option>gmail.com</option>
+            <option>hanmail.net</option>
+          </select></td>
+      </tr>
+
+      <tr>
+        <td>문자수신 여부</td>
+        <td>예<input type="radio" name="check" checked>
+          아니오<input type="radio" name="check"></td>
+      </tr>
+      <td>가입경로</td>
+      <td>
+        <input type="checkbox">친구소개
+        <input type="checkbox">인터넷 검색
+        <input type="checkbox">블로그
+        <input type="checkbox">기타
+      </td>
+      </tr>
+      <tr>
+        <td>문의하기</td>
+        <td><input type="button" value="문의하기" onclick="window.open('문의하기.html')"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
