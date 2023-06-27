@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <title>박스 모델3</title>
+  <style>
+    #a {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      box-shadow: 0 -5px red, 5px 0 blue, 0 5px yellow, -5px 0 green;
+      margin-bottom: 30px;
+      margin-left: 30px;
+    }
+
+    #b {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      box-shadow: inset 0 -5px red, inset 5px 0 blue, inset 0 5px yellow, inset -5px 0 green;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    #c {
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+      box-shadow: 5px 5px 10px 10px red, 15px 15px 10px 20px yellow;
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="a"></div>
+  <div id="b"></div>
+  <div id="c"></div>
+</body>
+
+</html>
