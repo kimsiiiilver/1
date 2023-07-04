@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <title>배경색</title>
+  <style>
+    .desc {
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      margin: 20px;
+      border: 3px dotted black;
+      background-color: orange;
+      float: left;
+    }
+    #clip-padding {
+      background-clip: padding-box;
+    }
+    #clip-content{
+      background-clip: content-box;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="desc" id="clip-border">가나다라마바사</div>
+    <div class="desc" id="clip-padding">가나다라마바사</div>
+    <div class="desc" id="clip-content">가나다라마바사</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+  <title>그라데이션</title>
+  <style>
+    .grad {
+      width: 300px;
+      height: 200px;
+    }
+    #a{
+      background: radial-gradient(white, yellow, red);
+    }
+    #b{
+      background: radial-gradient(circle, white, yellow, red);
+    }
+    #c{
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 20% 20%, white, blue);
+    }
+  </style>
+
+<body>
+  <div class="grad" id="a"></div>
+  <div class="grad" id="b"></div>
+  <div class="grad" id="c"></div>
+</body>
+
+</html>
