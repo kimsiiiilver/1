@@ -1,18 +1,16 @@
-package sec01;
+package sec02;
 
 public class 학생예제1 {
 
 	public static void main(String[] args) {
-		Student s1 = new Student();
-		Student s2 = new Student();
 		
-
-
-		if (s1 == s2) {
-			System.out.println("같은 참조");
-		} else {
-			System.out.println("다른 참조");
-		}
+		Student s = new Student();
+		
+		System.out.println(s.name);
+		
+		s.dept = "법학과";
+		
+		System.out.println(s.dept);
 	}
 
 }
