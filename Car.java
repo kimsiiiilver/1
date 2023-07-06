@@ -1,28 +1,29 @@
-package sec03;
+package sec04;
 
 public class Car {
 
-	String company;
-	String color;
-	String model;
-	int maxSpeed;
-	int speed;
+	private int speed = 100;
 
-	public Car() { // 기본 생성자를 제일 위로
-
+	void powerOn() {
+		System.out.println("시동을 걸었습니다.");
 	}
 
-	public Car(String model, int speed) { // 생성자를 하나라도 만들면
-		// 컴퓨터가 자동으로 만들지 않음
-		this.model = model;
-		this.speed =speed;
+	void powerOff() {
+		System.out.println("시동을 끕니다.");
 	}
 
-	public Car(String model, String color, int maxSpeed) { // 생성자를 하나라도 만들면
-											// 컴퓨터가 자동으로 만들지 않음
-		this.model = model;
-		this.maxSpeed = maxSpeed;
-		this.color = color;
+	int speedUp(int x) {
+		speed+= x;
+		return speed;
+	}
+	
+	int speedDown(int y) {
+		speed-= y;
+		return speed;
+	}
 
+	int breakZero() {
+		speed= 0;
+		return speed;
 	}
 }
