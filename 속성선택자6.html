@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+  <title>속성선택자</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    li a {
+      padding: 5px 20px;
+      font-size: 14px;
+      color: blue;
+      text-decoration: none;
+    }
+    a[href *= na]{
+      background-color: blue;
+      color: white;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>외국어 서비스 : </li>
+    <li><a href="https://WWW.daum.net">다음</a></li>
+    <li><a href="https://WWW.naver.com">네이버</a></li>
+    <li><a href="https://www.google.com">구글</a></li>
+  </ul>
+</body>
+
+</html>
