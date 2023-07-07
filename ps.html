@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+  <title>ps연습</title>
+  <style>
+    input:checked + label {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>객실 형태</legend>
+      <ul>
+        <li>
+          <input type="radio" name="room" id="basic">
+          <label for="basic">기본형(최대 2인)</label>
+        </li>
+        <li>
+          <input type="radio" name="room" id="family">
+          <label for="family">가족형(최대 8인)</label>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+</body>
+
+</html>

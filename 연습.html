@@ -1,13 +1,100 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-  <title>연습</title>
+  <title>예약창</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container1{
+      width: 850px;
+      margin: 0 auto;
+    }
+    .container1 ul li {
+      list-style: none;
+      display: inline-block;
+      float: left;
+      padding: 20px;
+      border-bottom: 1px solid black;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container2 {
+      clear: left;
+      margin: 20px;
+    }
+
+    form {
+      border: 2px solid gray;
+      width: 300px;
+      margin: 15px;
+      padding: 20px;
+      line-height: 40px;
+
+    }
+
+    fieldset {
+      padding: 30px;
+      margin: 30px auto;
+    }
+
+    form ul li {
+      list-style: none;
+    }
+
+    button {
+      border: 1px solid black;
+      border-radius: 20px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      margin: auto;
+      display: block;
+      background-color: rgb(233, 227, 227);
+      padding: 5px 20px;
+    }
+  </style>
 </head>
+
 <body>
-   <h1>웹 개발 기초</h1>
-   </h1>
-   <p>html</p>
-   <p>css</p>
-   <p>자바스크립트</p>
+  <div class="container1">
+    <ul>
+      <li><a href="#">이용 안내</a></li>
+      <li><a href="#">객실 소개</a></li>
+      <li><a href="#">예약 방법 및 요금</a></li>
+      <li><a href="#">예약하기</a></li>
+    </ul>
+  </div>
+
+  <div class="container2">
+    <form>
+      <fieldset>
+        <table>
+          <legend>개인 정보</legend>
+          <tr>
+            <td>이름</td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td>연락처</td>
+            <td><input type="text"></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>객실 형태</legend>
+        <ul>
+          <li><input type="radio" name="room">기본형(최대 2인)</li>
+          <li><input type="radio" name="room">가족형(최대 8인)</li>
+        </ul>
+      </fieldset>
+      <button type="button">제출
+    </form>
+
 </body>
+
 </html>
