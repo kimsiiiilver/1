@@ -1,42 +1,61 @@
-package sec05;
+package sec06;
+
+import java.util.Scanner;
 
 public class Car {
 
-	// 필드 선언
-	String model;
-	int speed;
-	
-	//기본생성자
-	Car(){
-		
+	Scanner s = new Scanner(System.in);
+
+	private String name;
+	private String company;
+	private String color;
+	private int speed = 50;
+
+	public String getName() {
+		return name;
 	}
 
-	// 매개변수 1개 생성자, 기본 생성자 x
-	Car(String model) {
-		this.model = model;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	// 매개변수 1개 메소드, 리턴값 x
-	void setSpeed(int speed) {
-		this.speed = speed;
+	public String getCompany() {
+		return company;
 	}
 
-	// 매개변수 없는 메소드, 리턴값x
-	void run() {
-		for (int i = 10; i <= 50; i += 10) {
-			this.setSpeed(i);
-			System.out.println(this.model + "가 달립니다.(시속 : " + this.speed + "km/h)");
+	public void setCompany(String company) {
+		this.company = company;
+	}
 
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor() {
+		System.out.println("변경할 색상을 입력하세요");
+		String color = s.next();
+		this.color = color;
+		System.out.println("변경한 색상 : " + this.color);
+	}
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed() {
+		System.out.println("방향키를 눌러주세요. a는 속도증가, s는 속도감속입니다.");
+		String key = s.next();
+		System.out.println("속도값을 입력하세요.");
+		int sp = s.nextInt();
+
+		if (key.equals("s") && speed < sp) {
+			System.out.println("속도는 마이너스가 될 수 없습니다.");
+		} else if (key.equals("s")) {
+			speed -= sp;
+		} else {
+			speed += sp;
 		}
+		System.out.println("현재 속도는 : "+ speed);
 	}
 
-	public static void main(String[] args) {
-		Car myCar = new Car("포르쉐");
-		myCar.run();
-		
-		Car yourCar = new Car("제규어");
-		yourCar.speed=60;
-		
-		yourCar.run();
-	}
 }

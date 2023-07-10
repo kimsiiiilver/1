@@ -1,19 +1,35 @@
-package sec04;
+package sec06;
+
+import java.util.Scanner;
 
 public class CarExample {
 
 	public static void main(String[] args) {
-		Car car = new Car();
-		car.powerOn();
-		int result1=car.speedUp(30);
-		System.out.println("현재 속도는 : "+ result1 + "입니다.");
-		int result2=car.speedUp(20);
-		System.out.println("현재 속도는 : "+ result2 + "입니다.");
-		int result3=car.speedDown(70);
-		System.out.println("현재 속도는 : "+ result3 + "입니다.");
-		int result4=car.breakZero();
-		System.out.println("현재 속도는 : "+ result4 + "입니다.");
-		car.powerOff();
-	}
+		Scanner s = new Scanner(System.in);
 
+		Car car = new Car();
+
+		w: while (true) {
+			System.out.println("1. 색상 변경 | 2. 속도 변경 | 3. 중단");
+			System.out.println("원하는 서비스를 입력하십시오.");
+			int num = s.nextInt();
+
+			switch (num) {
+			case 1:
+				car.setColor();
+				break;
+
+			case 2:
+				car.setSpeed();
+				break;
+				
+			case 3:
+				System.out.println("종료합니다.");
+				break w;
+			default:
+				System.out.println("잘못 입력하셨습니다.");
+			}
+
+		}
+	}
 }
