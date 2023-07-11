@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 300px;
+      padding: 20px;
+      margin: 20px auto;
+      border:  2px solid gray;
+      line-height: 2em;
+    }
+    h1{
+      line-height: 2em;
+    }
+    .container li {
+      margin-left: 20px;
+    }
+    li.new::after{
+      content: "NEW!!";
+      font-size: x-small;
+      padding: 2px 4px;
+      margin:  0 10px;
+      border-radius: 2px;
+      background-color:  red;
+      color: white;
+    }
+    li.discount::before{
+      content: "할인";
+      font-size: x-small;
+      padding: 1px 3px;
+      margin: 0px 5px;
+      border-radius: 2px;
+      background-color: blue;
+      color: white;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>제품 목록</h1>
+    <ul>
+      <li class="new">제품</li>
+      <li class="discount">제품 B</li>
+      <li class="discount">제품 C</li>
+      <li class="new">제품 D</li>
+    </ul>
+  </div>
+</body>
+</html>

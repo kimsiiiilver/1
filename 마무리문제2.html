@@ -1,21 +1,54 @@
 <!DOCTYPE html>
+
 <head>
   <title>마무리문제2</title>
   <style>
-    #main{
-      width: 300px;
-      height: 100px;
-      line-height: 100px;
-      background-color: yellow;
-      color: white;
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .conteiner ul{
+      width: 660px;
+      height: 51.33px;
+      margin: 50px;
+      box-shadow: 7px 10px 5px gray;
+    }
+    .conteiner li {
+      box-sizing: border-box;
+      width: 110px;
+      padding: 15px 0;
       text-align: center;
-       text-shadow: 3px 3px  red;
+      border-right: 1px solid black;
+      list-style: none;
+      background-color: lightgrey;
+      float: left;
+    }
+    .conteiner ul li:last-child{
+      border-right: 0;
+    }
+
+    .conteiner ul li:last-child:hover{
+      background-color: #b30000;
+      color: #fff;
+    }
+    .conteiner ul li:not(:last-child):hover{
+      background-color: #555;
+      color: #fff;
     }
   </style>
 </head>
+
 <body>
-  <div id="main">
-    <h1>웹 개발 기초</h1>
+  <div class="conteiner">
+    <ul>
+    <li>메뉴1</li>
+    <li>메뉴2</li>
+    <li>메뉴3</li>
+    <li>메뉴4</li>
+    <li>메뉴5</li>
+    <li>메뉴6</li>
+  </ul>
   </div>
 </body>
+
 </html>
