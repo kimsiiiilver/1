@@ -1,22 +1,16 @@
-package sec04;
+package sec01.exam02;
 
-public class SuperCar {
+public class SuperCar extends Car{
+	
+	int maxSpeed;
+	String engine;
+	
 
-	int speed;
-
-	int getSpeed() { // 현재 속도를 리턴시키는 메소드
-		return speed;
+	public SuperCar(String model, String company,int maxSpeed,String engine) {
+		super(model, company);  //부모 생성자 호출
+		this.maxSpeed = maxSpeed;
+		this.engine = engine;
 	}
-
-	void keyTurnOn() { // 시동거는 메소드, 리턴x
-		System.out.println("키를 돌립니다.");
-	}
-
-	void run() {
-		for (int i = 0; i <= 50; i += 10) { // 0부터 50까지 10씩 증가, 6번 반복하여 현재 속도 출력, 리턴x
-			speed = i;
-			System.out.println("달립니다.(시속 " + speed + "km/h)");
-		}
-	}
+	
 
 }

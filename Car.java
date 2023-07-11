@@ -1,61 +1,25 @@
-package sec06;
-
-import java.util.Scanner;
+package sec01.exam02;
 
 public class Car {
+	String model;
+	String company; // 제조회사
+	int cost; // 가격
+	int fuel; // 연비
 
-	Scanner s = new Scanner(System.in);
-
-	private String name;
-	private String company;
-	private String color;
-	private int speed = 50;
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getCompany() {
-		return company;
-	}
-
-	public void setCompany(String company) {
+	public Car(String model, String company) { // 매개변수 2개 사용하는 생성자
+		this.model = model;
 		this.company = company;
 	}
 
-	public String getColor() {
-		return color;
+	void powerOn() {
+		System.out.println("시동을 켭니다.");
 	}
 
-	public void setColor() {
-		System.out.println("변경할 색상을 입력하세요");
-		String color = s.next();
-		this.color = color;
-		System.out.println("변경한 색상 : " + this.color);
+	void powerOff() {
+		System.out.println("시동을 끕니다.");
 	}
-
-	public int getSpeed() {
-		return speed;
-	}
-
-	public void setSpeed() {
-		System.out.println("방향키를 눌러주세요. a는 속도증가, s는 속도감속입니다.");
-		String key = s.next();
-		System.out.println("속도값을 입력하세요.");
-		int sp = s.nextInt();
-
-		if (key.equals("s") && speed < sp) {
-			System.out.println("속도는 마이너스가 될 수 없습니다.");
-		} else if (key.equals("s")) {
-			speed -= sp;
-		} else {
-			speed += sp;
-		}
-		System.out.println("현재 속도는 : "+ speed);
+	void speedUp(int speed) {
+		System.out.println(speed+"만큼 속도가 감소합니다.");
 	}
 
 }

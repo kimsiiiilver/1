@@ -1,23 +1,32 @@
-package sec04;
+package sec01;
+
+import java.util.Scanner;
 
 public class Computer {
 	
-//배열의 전체 숫자의 합계(배열의 개수 정해지지 않음)
-	int sum1(int[]values) {
-		int sum=0;
-		for(int i=0; i<values.length; i++) {
-			sum+=values[i];
+	Scanner s = new Scanner(System.in);
+	
+	String company;
+	int price;
+	String year;
+	
+	void powerOn() {System.out.println("전원을 켭니다.");}
+	void powerOff() {System.out.println("전원을 끕니다.");}
+	
+		void play(String game) {
+			System.out.println(game + "을 시작합니다.");
+			System.out.println("종료를 원하시면 'x'를 입력하세요.");
+			while(true) {
+				String input=s.next();
+				if(input.equals("x")) {
+					System.out.println(game + "을 종료합니다.");
+					break;
+				}
+			}
+			
 		}
-		return sum;
-	}
-	public static void main(String[]args) {
-		Computer myCom = new Computer();
-		int[] values1 = {1,2,3};
-		int result = myCom.sum1(values1);
-		System.out.println(result);
 		
-		int result2 = myCom.sum1(new int[] {1,2,3});
-		System.out.println(result2);
-		
-	}
+	
+	
+	
 }
