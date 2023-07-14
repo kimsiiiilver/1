@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+    }
+
+    #opt1 {
+      width: 800px;
+      padding: 10px;
+      border: 1px solid black;
+      flex-direction: row;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    #opt2 {
+      width: 800px;
+      padding: 10px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+      flex-direction: row nowrap;
+    }
+    #opt3 {
+      width: 800px;
+      padding: 10px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+      flex-direction: column;
+    }
+    #opt4 {
+      width: 800px;
+      padding: 10px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+      flex-direction: column-reverse;
+    }
+
+    #box {
+      width: 200px;
+      height: 100px;
+      background: black;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      margin: 10px;
+      line-height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="opt1">
+    <div id="box">1</div>
+    <div id="box">2</div>
+    <div id="box">3</div>
+    <div id="box">4</div>
+    <div id="box">5</div>
+  </div>
+  <div class="container" id="opt2">
+    <div id="box">1</div>
+    <div id="box">2</div>
+    <div id="box">3</div>
+  </div>
+  <div class="container" id="opt3">
+    <div id="box">1</div>
+    <div id="box">2</div>
+    <div id="box">3</div>
+  </div>
+  <div class="container" id="opt4">
+    <div id="box">1</div>
+    <div id="box">2</div>
+    <div id="box">3</div>
+  </div>
+</body>
+
+</html>
