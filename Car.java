@@ -1,25 +1,13 @@
-package sec01.exam02;
+package sec02;
 
-public class Car {
-	String model;
-	String company; // 제조회사
-	int cost; // 가격
-	int fuel; // 연비
+public class car {
 
-	public Car(String model, String company) { // 매개변수 2개 사용하는 생성자
-		this.model = model;
-		this.company = company;
-	}
+	int maxSpeed = 350;
+	int speed;
+	String company = "현대자동차";
+	String color = "검정";
+	String model = "제네시스G90";
 
-	void powerOn() {
-		System.out.println("시동을 켭니다.");
-	}
-
-	void powerOff() {
-		System.out.println("시동을 끕니다.");
-	}
-	void speedUp(int speed) {
-		System.out.println(speed+"만큼 속도가 감소합니다.");
-	}
+	
 
 }
